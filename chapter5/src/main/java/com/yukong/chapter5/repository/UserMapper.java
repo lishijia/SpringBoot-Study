@@ -11,7 +11,6 @@ import java.util.List;
  * @Date: 2018/8/13 19:47
  * @Description: UserMapper接口
  */
-@DataSource("slave1")
 public interface UserMapper {
 
     /**
@@ -19,7 +18,6 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @DataSource  //默认数据源
     int save(User user);
 
     /**
@@ -27,7 +25,6 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @DataSource("slave1")  //默认数据源
     int update(User user);
 
     /**
@@ -35,7 +32,6 @@ public interface UserMapper {
      * @param id
      * @return
      */
-    @DataSource  //默认数据源
     int deleteById(Long id);
 
     /**
@@ -43,7 +39,6 @@ public interface UserMapper {
      * @param id
      * @return
      */
-    @DataSource("slave1")  //slave1
     User selectById(Long id);
 
     /**

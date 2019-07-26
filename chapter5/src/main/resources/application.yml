@@ -3,22 +3,22 @@ server:
 spring:
   datasource:
     master:
-      password: abc123
-      url: jdbc:mysql://193.112.100.103:3306/master?useUnicode=true&characterEncoding=UTF-8
+      password: 123456
+      url: jdbc:mysql://192.168.0.114:3306/a?useUnicode=true&characterEncoding=UTF-8
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       type: com.zaxxer.hikari.HikariDataSource
     cluster:
     - key: slave1
-      password: abc123
-      url: jdbc:mysql://193.112.100.103:3306/slave1?useUnicode=true&characterEncoding=UTF-8
+      password: 123456
+      url: jdbc:mysql://192.168.0.114:3306/b?useUnicode=true&characterEncoding=UTF-8
       idle-timeout: 20000
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       type: com.zaxxer.hikari.HikariDataSource
     - key: slave2
-      password: abc123
-      url: jdbc:mysql://193.112.100.103:3306/slave2?useUnicode=true&characterEncoding=UTF-8
+      password: 123456
+      url: jdbc:mysql://192.168.0.114:3306/c?useUnicode=true&characterEncoding=UTF-8
       driver-class-name: com.mysql.jdbc.Driver
       username: root
 mybatis:
